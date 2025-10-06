@@ -10,34 +10,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
   </head>
+
   <body>
     <div class="game-container">
       <header class="game-header">
         <p>© 2024 <a href="#" target="_blank">Dennis Otuoma</a></p>
-        <p>computer 0 0 player</p>
+        <p><span id="computer-score">computer 0</span> 0 <span id="player-score">player</span></p>
       </header>
 
       <main class="game-main">
         <section class="side">
           <h3>Computer</h3>
-          <div class="emoji-box">✌️</div>
+          <div id="computer-choice" class="emoji-box">🤖</div>
         </section>
 
         <div class="result-banner">
-          <h2>CURRENTLY DRAW</h2>
+          <h2 id="result-text">CLICK TO PLAY</h2>
         </div>
 
         <section class="side">
           <h3>Player</h3>
-          <div class="emoji-box">✌️</div>
+          <div id="player-choice" class="emoji-box">❓</div>
         </section>
       </main>
 
       <footer class="controls">
-        <button>✊ Rock</button>
-        <button>✋ Paper</button>
-        <button>✌️ Scissors</button>
+        <button data-choice="rock">✊ Rock</button>
+        <button data-choice="paper">✋ Paper</button>
+        <button data-choice="scissors">✌️ Scissors</button>
       </footer>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
